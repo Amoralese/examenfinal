@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menuprincipal.master.cs" Inherits="VEHICULOS.Menuprincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="css/Estilomenu.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="navbar">
+  <a href="INICIO.ASPX">INICIO</a>
+  <div class="subnav">
+    <button class="subnavbtn"> CATALOGO <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="USUARIOS.ASPX">USUARIOS</a>
+      <a href="PLACAS.ASPX">PLACAS</a>
+      <a href="REPORTES.ASPX">REPORTES</a>
+    </div>
+  </div> 
+
+  <a href="#contact">AYUDA</a>
+</div>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
